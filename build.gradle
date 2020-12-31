@@ -8,7 +8,7 @@ repositories {
     mavenCentral()
 }
 
-mainClassName = 'com.hasanguner.aoc2020.Day1'
+mainClassName = project.hasProperty("mainClass") ? project.getProperty("mainClass") :'com.hasanguner.aoc2020.Day20'
 
 group 'com.hasanguner'
 version '1.0'
